@@ -13,7 +13,7 @@ function createArrayOfNumber(start, end) {
   }
   return myArray;
 }
-let numbersArray = createArrayOfNumber(1, 10);
+let numbersArray = createArrayOfNumber(1, 100);
  
 clickMe.addEventListener('click', () => {
   if (numbersArray.length === 0) {
@@ -25,46 +25,3 @@ clickMe.addEventListener('click', () => {
   numbersArray.splice(randomIndex, 1);
  document.querySelector('h1').innerText = (randomNumber);
 });
-
-// const root = document.querySelector('#root');
-
-// fetch('http://api.alquran.cloud/v1/quran/quran-uthmani')
-//   .then(response => response.json())
-//   .then(data => {
-//     console.log(data);
-//     let surah = data.data.surahs;
-//     surah.forEach(surah => {
-//       let surahName = surah.englishName;
-//       let surahNumber = surah.number;
-//       let surahAyat = surah.numberOfAyahs;
-//       let surahPage = surah.numberOfPages;
-//       let surahJuz = surah.juz;
-//       let surahHizb = surah.hizbQuarter;
-//       let surahManzil = surah.manzil;
-//       let surahRubah = surah.rub3;
-//       let surahText = surah.text;
-//       let surahTextAr = surah.text.arabic;
-
-//       const surahDiv = document.createElement('div');
-//       surahDiv.classList.add('surah');
-      
-//       surahDiv.innerHTML = `
-//         <h2>${surahName}</h2>
-//         <p>Number: ${surahNumber}</p>
-//         <p>Ayat: ${surahAyat}</p>
-//         <p>Page: ${surahPage}</p>
-//         <p>Juz: ${surahJuz}</p>
-//         <p>Hizb: ${surahHizb}</p>
-//         <p>Manzil: ${surahManzil}</p>
-//         <p>Rubah: ${surahRubah}</p>
-//         <p>Text: ${surahText}</p>
-//         <p>Text Ar: ${surahTextAr}</p>
-//       `;
-//       root.appendChild(surahDiv);
-
-//     });
-
-//   });
-
-
-
